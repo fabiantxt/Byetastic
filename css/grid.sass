@@ -1,0 +1,50 @@
+/* Small screens (default) */
+html
+  font-size: 100%
+  footer
+    text-align: center
+    width: 100%
+    font-size: .7em
+  header
+    margin: 4em auto
+   
+
+/* Medium screens (640px) */
+@media (max-width: 640px)
+  html
+    font-size: 100%%
+    color: blue
+ 
+/* Large screens (1024px) */
+@media (max-width: 1024px)
+  html
+    font-size: 100%
+    color: yellow
+
+/* Columns and rows */
+
+@media (min-width: 1024px)
+  .column
+    float: left
+    padding-left: 1rem
+    padding-right: 1rem
+  .column.full
+    width: 100%
+  .column.two-thirds
+    width: 66.7%
+  .column.half
+    width: 50%
+  .column.third
+    width: 33.3%
+  .column.fourth
+    width: 24.95%
+  .column.flow-opposite
+    float: right 
+  .clearfix:before,
+  .clearfix:after
+    content: " "
+    display: table
+  .clearfix:after
+    clear: both
+  .clearfix
+    *zoom: 1
